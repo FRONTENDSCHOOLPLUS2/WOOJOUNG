@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["/*"],
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@hooks/*": ["hooks/*"],
+      "#types/*": ["types/*"] // 공용 타입 정의 폴더
+    },
+    "allowJs": true // 자바스크립트 파일을 타입스크립트 프로젝트에 포함
+    // "checkJs": true, // 자바스크립트 파일에 대한 타입체크 활성화
+  },
+  "include": ["src", "src/vite-env.d.ts"] // vite에서 제공하는 import.meta.env 등의 클라이언트용 타입 추가
+}

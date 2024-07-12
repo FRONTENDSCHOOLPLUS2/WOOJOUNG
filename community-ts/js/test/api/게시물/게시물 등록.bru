@@ -1,0 +1,21 @@
+meta {
+  name: 게시물 등록
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL}}/posts
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "{{name}}",
+    "title": " 집에 조심해서 가요.",
+    "content": "1121212입니다. 날씨가 맑아서 좋았어요.",
+    "image": "sample-bugatti.png",
+    "tag": "혼자,떠나요,제주도"
+  }
+}

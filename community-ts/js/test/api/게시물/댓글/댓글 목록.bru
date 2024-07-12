@@ -1,0 +1,18 @@
+meta {
+  name: 댓글 목록
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/posts/1/replies
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    
+    "content" : "hello"
+  }
+}

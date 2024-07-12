@@ -1,0 +1,15 @@
+meta {
+  name: 파일 업로드
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{URL}}/files
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  attach: @file(/Users/woojoung/Desktop/meetme.png)
+}
