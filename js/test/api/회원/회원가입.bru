@@ -1,0 +1,20 @@
+meta {
+  name: 회원가입
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/users
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email":"ywj981217@market.com",
+    "password": "11111111",
+    "name": "우중님1쌤",
+    "type" : "user"
+  }
+}
